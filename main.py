@@ -42,7 +42,7 @@ class MainWindow(QMainWindow):
         self.ui.stackedWidget.setMinimumWidth(20)
         UIFunctions.addNewMenu(self, "HOME", "btn_home", "url(:/16x16/icons/16x16/cil-home.png)", True)
         UIFunctions.addNewMenu(self, "YOUTUBE PLAYER", "btn_youtube_player", "url(:/16x16/icons/16x16/cil-featured-playlist.png)", True)
-        UIFunctions.addNewMenu(self, "PYVA TRANSLATE", "btn_translate", "url(:/16x16/icons/16x16/cil-transfer.png)", True)
+        UIFunctions.addNewMenu(self, "MEERUVA TRANSLATE", "btn_translate", "url(:/16x16/icons/16x16/cil-transfer.png)", True)
         
 
         # START MENU => SELECTION
@@ -147,21 +147,30 @@ class MainWindow(QMainWindow):
             self.ui.answer_output.setText(Functions.GetAnswer(query))
             
         if self.sender().objectName() == "sound_btn":
-            query = self.ui.user_input.text()
-            self.ui.answer_output.setText(Functions.GetAnswer(query))
-            url = Functions.GetSound(query)
+            self.ui.answer_output.setText(Functions.Gift())
+
+        # if self.sender().objectName() == "sound_btn":
+        #     query = self.ui.user_input.text()
+        #     self.ui.answer_output.setText(Functions.GetAnswer(query))
+        #     url = Functions.GetSound(query)
+        #     self.ui.mediaPlayer = QtMultimedia.QMediaPlayer(self)
+        #     self.ui.mediaPlayer.setMedia(QtMultimedia.QMediaContent(url))
+        #     self.ui.mediaPlayer.play()
+            
+        # if self.sender().objectName() == "youtube_search_btn":
+        #     query = self.ui.youtube_search_input.text()
+        #     if query:
+        #         url = Functions.GetYouTubeLink(query)
+        #         if Functions.MediaCheck():
+        #             Functions.StopVideo()
+        #         Functions.VLCPlay(url)
+        
+        if self.sender().objectName() == "youtube_search_btn":
+            url = QtCore.QUrl.fromLocalFile('milim.mp3')
             self.ui.mediaPlayer = QtMultimedia.QMediaPlayer(self)
             self.ui.mediaPlayer.setMedia(QtMultimedia.QMediaContent(url))
             self.ui.mediaPlayer.play()
-            
-        if self.sender().objectName() == "youtube_search_btn":
-            query = self.ui.youtube_search_input.text()
-            if query:
-                url = Functions.GetYouTubeLink(query)
-                if Functions.MediaCheck():
-                    Functions.StopVideo()
-                Functions.VLCPlay(url)
-            
+
         if self.sender().objectName() == "youtube_pause":
             Functions.PauseVideo()
             if (self.pause_count % 2 == 0):

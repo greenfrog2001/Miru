@@ -1,22 +1,25 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'GUI_BASEusrvFh.ui'
+## Form generated from reading UI file 'GUI_BASEOIvGeN.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 5.14.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
+from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
+    QRect, QSize, QUrl, Qt)
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
+    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
+    QRadialGradient)
 from PySide2.QtWidgets import *
 
 import files_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
+        if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1000, 720)
         MainWindow.setMinimumSize(QSize(1000, 720))
@@ -722,7 +725,7 @@ class Ui_MainWindow(object):
         self.sound_btn.setObjectName(u"sound_btn")
         self.sound_btn.setGeometry(QRect(450, 190, 81, 81))
         self.sound_btn.setStyleSheet(u"QPushButton {\n"
-"	background-image: url(:/24x24/icons/24x24/cil-headphones.png);\n"
+"	background-image: url(:/20x20/icons/20x20/cil-heart.png);\n"
 "	background-position: center;\n"
 "	background-repeat: no-reperat;\n"
 "	border: none;\n"
@@ -754,6 +757,7 @@ class Ui_MainWindow(object):
 "QTextEdit:focus {\n"
 "	border: 2px solid rgb(91, 101, 124);\n"
 "}")
+        self.answer_output.setCursorWidth(2)
         self.stackedWidget.addWidget(self.page_home)
         self.page_youtube = QWidget()
         self.page_youtube.setObjectName(u"page_youtube")
@@ -840,12 +844,23 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {	\n"
 "	background-color: rgb(85, 170, 255);\n"
 "}")
+        self.youtube_label_2 = QLabel(self.page_youtube)
+        self.youtube_label_2.setObjectName(u"youtube_label_2")
+        self.youtube_label_2.setGeometry(QRect(60, 50, 451, 101))
+        font10 = QFont()
+        font10.setFamily(u"MS Shell Dlg 2")
+        font10.setPointSize(12)
+        font10.setBold(False)
+        font10.setItalic(False)
+        font10.setWeight(50)
+        self.youtube_label_2.setFont(font10)
+        self.youtube_label_2.setStyleSheet(u"font: 12pt \"MS Shell Dlg 2\";")
         self.stackedWidget.addWidget(self.page_youtube)
         self.page_translate = QWidget()
         self.page_translate.setObjectName(u"page_translate")
         self.translate_label = QLabel(self.page_translate)
         self.translate_label.setObjectName(u"translate_label")
-        self.translate_label.setGeometry(QRect(60, 10, 451, 101))
+        self.translate_label.setGeometry(QRect(50, -10, 451, 101))
         self.translate_label.setFont(font9)
         self.translate_label.setStyleSheet(u"font: 28pt \"MS Shell Dlg 2\";")
         self.src_text = QTextEdit(self.page_translate)
@@ -887,10 +902,10 @@ class Ui_MainWindow(object):
         self.translate_btn.setGeometry(QRect(406, 134, 91, 41))
         sizePolicy.setHeightForWidth(self.translate_btn.sizePolicy().hasHeightForWidth())
         self.translate_btn.setSizePolicy(sizePolicy)
-        font10 = QFont()
-        font10.setFamily(u"Segoe UI")
-        font10.setPointSize(11)
-        self.translate_btn.setFont(font10)
+        font11 = QFont()
+        font11.setFamily(u"Segoe UI")
+        font11.setPointSize(11)
+        self.translate_btn.setFont(font11)
         self.translate_btn.setStyleSheet(u"QPushButton {\n"
 "	background-position: center;\n"
 "	background-repeat: no-reperat;\n"
@@ -906,10 +921,10 @@ class Ui_MainWindow(object):
         self.src_box = QComboBox(self.page_translate)
         self.src_box.setObjectName(u"src_box")
         self.src_box.setGeometry(QRect(140, 140, 191, 31))
-        font11 = QFont()
-        font11.setFamily(u"Segoe UI")
-        font11.setPointSize(9)
-        self.src_box.setFont(font11)
+        font12 = QFont()
+        font12.setFamily(u"Segoe UI")
+        font12.setPointSize(9)
+        self.src_box.setFont(font12)
         self.src_box.setStyleSheet(u"QComboBox{\n"
 "	background-color: rgb(27, 29, 35);\n"
 "	border-radius: 5px;\n"
@@ -929,7 +944,7 @@ class Ui_MainWindow(object):
         self.dest_box = QComboBox(self.page_translate)
         self.dest_box.setObjectName(u"dest_box")
         self.dest_box.setGeometry(QRect(569, 140, 191, 31))
-        self.dest_box.setFont(font11)
+        self.dest_box.setFont(font12)
         self.dest_box.setStyleSheet(u"QComboBox{\n"
 "	background-color: rgb(27, 29, 35);\n"
 "	border-radius: 5px;\n"
@@ -1057,7 +1072,7 @@ class Ui_MainWindow(object):
         self.pushButton = QPushButton(self.frame_content_wid_1)
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setMinimumSize(QSize(150, 30))
-        self.pushButton.setFont(font11)
+        self.pushButton.setFont(font12)
         self.pushButton.setStyleSheet(u"QPushButton {\n"
 "	border: 2px solid rgb(52, 59, 72);\n"
 "	border-radius: 5px;	\n"
@@ -1168,7 +1183,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
         self.horizontalLayout_11 = QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
         self.plainTextEdit = QPlainTextEdit(self.scrollAreaWidgetContents)
@@ -1197,7 +1212,7 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setFont(font11)
+        self.comboBox.setFont(font12)
         self.comboBox.setAutoFillBackground(False)
         self.comboBox.setStyleSheet(u"QComboBox{\n"
 "	background-color: rgb(27, 29, 35);\n"
@@ -1527,7 +1542,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1539,7 +1554,7 @@ class Ui_MainWindow(object):
         self.btn_toggle_menu.setToolTip(QCoreApplication.translate("MainWindow", u"Menu", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_toggle_menu.setText("")
-        self.label_title_bar_top.setText(QCoreApplication.translate("MainWindow", u"PyVA", None))
+        self.label_title_bar_top.setText(QCoreApplication.translate("MainWindow", u"MeeruVA", None))
 #if QT_CONFIG(tooltip)
         self.btn_minimize.setToolTip(QCoreApplication.translate("MainWindow", u"Minimize", None))
 #endif // QT_CONFIG(tooltip)
@@ -1548,19 +1563,29 @@ class Ui_MainWindow(object):
         self.btn_close.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_close.setText("")
-        self.label_top_info_1.setText(QCoreApplication.translate("MainWindow", u"Python Virtual Assistant", None))
+        self.label_top_info_1.setText(QCoreApplication.translate("MainWindow", u"Meeru Virtual Assistant", None))
         self.label_top_info_2.setText(QCoreApplication.translate("MainWindow", u"| HOME", None))
-        self.label_user_icon.setText(QCoreApplication.translate("MainWindow", u"TP", None))
+        self.label_user_icon.setText(QCoreApplication.translate("MainWindow", u"GF", None))
         self.home_label.setText(QCoreApplication.translate("MainWindow", u"HOME", None))
-        self.user_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ask me something...", None))
+        self.user_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nh\u1eadp ph\u00e9p t\u00ednh ho\u1eb7c bi\u1ec3u th\u1ee9c To\u00e1n z\u00f4 th\u1eed xemm...", None))
 #if QT_CONFIG(tooltip)
         self.search_btn.setToolTip(QCoreApplication.translate("MainWindow", u"Search", None))
 #endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.search_btn.setWhatsThis(QCoreApplication.translate("MainWindow", u"Search", None))
+#endif // QT_CONFIG(whatsthis)
         self.search_btn.setText("")
 #if QT_CONFIG(tooltip)
-        self.sound_btn.setToolTip(QCoreApplication.translate("MainWindow", u"Speaker", None))
+        self.sound_btn.setToolTip(QCoreApplication.translate("MainWindow", u"Messages", None))
 #endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.sound_btn.setWhatsThis(QCoreApplication.translate("MainWindow", u"Sound", None))
+#endif // QT_CONFIG(whatsthis)
         self.sound_btn.setText("")
+#if QT_CONFIG(tooltip)
+        self.answer_output.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+        self.answer_output.setPlaceholderText("")
 #if QT_CONFIG(accessibility)
         self.youtube_search_input.setAccessibleName(QCoreApplication.translate("MainWindow", u"QLineEdit {\n"
 "	background-color: rgb(27, 29, 35);\n"
@@ -1575,8 +1600,8 @@ class Ui_MainWindow(object):
 "	border: 2px solid rgb(91, 101, 124);\n"
 "}", None))
 #endif // QT_CONFIG(accessibility)
-        self.youtube_search_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search by keywords (\"doraemon opening\", ...)...", None))
-        self.youtube_label.setText(QCoreApplication.translate("MainWindow", u"YouTube Video Player", None))
+        self.youtube_search_input.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search by keywords (\"milim bwahahahaha\", ...)...", None))
+        self.youtube_label.setText(QCoreApplication.translate("MainWindow", u"MeeruVA Youtuber Player", None))
 #if QT_CONFIG(tooltip)
         self.youtube_search_btn.setToolTip(QCoreApplication.translate("MainWindow", u"Find & Play", None))
 #endif // QT_CONFIG(tooltip)
@@ -1589,7 +1614,8 @@ class Ui_MainWindow(object):
         self.youtube_stop.setToolTip(QCoreApplication.translate("MainWindow", u"Stop", None))
 #endif // QT_CONFIG(tooltip)
         self.youtube_stop.setText("")
-        self.translate_label.setText(QCoreApplication.translate("MainWindow", u"PyVA Translate", None))
+        self.youtube_label_2.setText(QCoreApplication.translate("MainWindow", u"\u0110ang d\u00ednh bug n\u00ean b\u1ea5m nghe t\u1ea1m milim nhaaaa", None))
+        self.translate_label.setText(QCoreApplication.translate("MainWindow", u"MeeruVA Translate", None))
         self.translate_btn.setText(QCoreApplication.translate("MainWindow", u"Translate", None))
 #if QT_CONFIG(tooltip)
         self.src_sound.setToolTip(QCoreApplication.translate("MainWindow", u"Speaker", None))

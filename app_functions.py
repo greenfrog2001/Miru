@@ -5,6 +5,7 @@ from gtts import gTTS
 from googletrans import Translator
 import os
 import pafy
+import random
 from youtube_search import YoutubeSearch
 import vlc
 import wikipedia
@@ -117,3 +118,31 @@ class Functions(MainWindow):
             origin += translation.origin + '\n'
             answer += translation.text + '\n'
         return answer
+
+    def Gift():
+        string1 = "Nhớ ăn đủ 3 bữa nhaaaaa!"
+        string2 = "Hôm nọ đi ngoài đường thấy một người quen lắm á! Hỏi ra mới biết là mẹ của Meeru luôn.\nĐúng là U MÊ RU mà :>"
+        string3 = "Hê lô bạn Nguyễn Thị Uyển Khanh nhaaa"
+        string4 = "Này! Tự soi gương kiểm điểm mình đi!\nCó người con gái nào vừa xinh vừa cuti qtqd mà lại còn thông minh như vậy không hả?? (๑˃̵ᴗ˂̵)ﻭ"
+        string5 = "Đồ gái alime (/◕ヮ◕)/"
+        string6 = "Cin chào Meelim, t là GRimuru đây (ーー;)"
+        string7 = "Cô!! Tất cả là tại cô!\nTừ khi gặp cô, không biết từ khi nào tôi đã có thêm quốc tịch khác.\nGiờ tôi đã trở thành người Inazuma"
+        string8 = "Khanh muốn gì còn không mau hỏi Trẫm, Trẫm duyệt hết!"
+        string9 = "Ahihihohuhhihhuhuo"
+        string10 = "Đến chừng nào t chưa nói t ghét miru thì t vẫn ở đây nha"
+        string11 = "Nếu mọi thứ có ập đến làm miru áp lực, mệt mỏi thì hãy thử dành thời gian thư giãn cho bản thân xíu nha"
+        string12 = "Cười nhiều lên một chút nè"
+        string13 = "So whenever you ask me again how i feel\nPlease remember my answer is you\n (Try Again - D.ear, JAEHYUN(Cover:Sam Benwick))"
+        string14 = "Hôm nào lại ngồi quán trà Liyue nói chuyện phiếm nha"
+        string15 = "Ê tự dưng muốn đàn gheeee. Muốn nghe khumm?"
+        string16 = "A B C D E U FUKING PRECIOUSS"
+        string17 = "You are special!"
+        string18 = "Pepe chào Meeruko nhaa"
+        string19 = "Đường đông xe còn Meeru thì Lee Dong-wook (^_^.)"
+        string20 = "Nhớ t khum? T thì nhớ áaaa"
+        string21 = "Kiếp sau nhớ đi ăn sập cái Việt Nam nhaaa ლ(´ڡ`ლ)"
+        string22 = "Cô gái giá băng :))))))))))"
+        string23 = "Tự tin lên chút nha"
+        string24 = ""
+        list_ = [string1, string2, string3, string4, string5, string6, string7, string8, string9, string10, string11, string12, string13, string14, string15, string16, string17, string18, string19, string20, string21, string22, string23]
+        return random.choice(list_)

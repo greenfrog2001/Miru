@@ -1041,7 +1041,7 @@ background-repeat: no-repeat;
 </string>
                      </property>
                      <property name="text">
-                      <string>PyVA</string>
+                      <string>MeeruVA</string>
                      </property>
                     </widget>
                    </item>
@@ -1234,7 +1234,7 @@ QPushButton:pressed {
                    <string notr="true">color: rgb(98, 103, 111); </string>
                   </property>
                   <property name="text">
-                   <string>Python Virtual Assistant</string>
+                   <string>Meeru Virtual Assistant</string>
                   </property>
                  </widget>
                 </item>
@@ -1453,7 +1453,7 @@ QPushButton:pressed {
 }</string>
                   </property>
                   <property name="text">
-                   <string>TP</string>
+                   <string>GF</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -1523,7 +1523,7 @@ QPushButton:pressed {
                    <string notr="true">background: transparent;</string>
                   </property>
                   <property name="currentIndex">
-                   <number>2</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="page_home">
                    <widget class="QLabel" name="home_label">
@@ -1596,7 +1596,7 @@ QLineEdit:focus {
                      <bool>false</bool>
                     </property>
                     <property name="placeholderText">
-                     <string>Ask me something...</string>
+                     <string>Nhập phép tính hoặc biểu thức Toán zô thử xemm...</string>
                     </property>
                    </widget>
                    <widget class="QPushButton" name="search_btn">
@@ -1609,6 +1609,9 @@ QLineEdit:focus {
                      </rect>
                     </property>
                     <property name="toolTip">
+                     <string>Search</string>
+                    </property>
+                    <property name="whatsThis">
                      <string>Search</string>
                     </property>
                     <property name="styleSheet">
@@ -1640,11 +1643,14 @@ QPushButton:pressed {
                      </rect>
                     </property>
                     <property name="toolTip">
-                     <string>Speaker</string>
+                     <string>Messages</string>
+                    </property>
+                    <property name="whatsThis">
+                     <string>Sound</string>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
-	background-image: url(:/24x24/icons/24x24/cil-headphones.png);
+	background-image: url(:/20x20/icons/20x20/cil-heart.png);
 	background-position: center;
 	background-repeat: no-reperat;
 	border: none;
@@ -1679,6 +1685,9 @@ QPushButton:pressed {
                     <property name="cursor" stdset="0">
                      <cursorShape>IBeamCursor</cursorShape>
                     </property>
+                    <property name="toolTip">
+                     <string/>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">QTextEdit {
 	background-color: rgb(27, 29, 35);
@@ -1692,6 +1701,12 @@ QTextEdit:hover {
 QTextEdit:focus {
 	border: 2px solid rgb(91, 101, 124);
 }</string>
+                    </property>
+                    <property name="cursorWidth">
+                     <number>2</number>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
                     </property>
                    </widget>
                   </widget>
@@ -1739,7 +1754,7 @@ QLineEdit:focus {
 }</string>
                     </property>
                     <property name="placeholderText">
-                     <string>Search by keywords (&quot;doraemon opening&quot;, ...)...</string>
+                     <string>Search by keywords (&quot;milim bwahahahaha&quot;, ...)...</string>
                     </property>
                    </widget>
                    <widget class="QLabel" name="youtube_label">
@@ -1764,7 +1779,7 @@ QLineEdit:focus {
                      <string notr="true">font: 28pt &quot;MS Shell Dlg 2&quot;;</string>
                     </property>
                     <property name="text">
-                     <string>YouTube Video Player</string>
+                     <string>MeeruVA Youtuber Player</string>
                     </property>
                    </widget>
                    <widget class="QPushButton" name="youtube_search_btn">
@@ -1878,13 +1893,38 @@ QPushButton:pressed {
                      <string/>
                     </property>
                    </widget>
+                   <widget class="QLabel" name="youtube_label_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>60</x>
+                      <y>50</y>
+                      <width>451</width>
+                      <height>101</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>MS Shell Dlg 2</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Đang dính bug nên bấm nghe tạm milim nhaaaa</string>
+                    </property>
+                   </widget>
                   </widget>
                   <widget class="QWidget" name="page_translate">
                    <widget class="QLabel" name="translate_label">
                     <property name="geometry">
                      <rect>
-                      <x>60</x>
-                      <y>10</y>
+                      <x>50</x>
+                      <y>-10</y>
                       <width>451</width>
                       <height>101</height>
                      </rect>
@@ -1902,7 +1942,7 @@ QPushButton:pressed {
                      <string notr="true">font: 28pt &quot;MS Shell Dlg 2&quot;;</string>
                     </property>
                     <property name="text">
-                     <string>PyVA Translate</string>
+                     <string>MeeruVA Translate</string>
                     </property>
                    </widget>
                    <widget class="QTextEdit" name="src_text">
@@ -2478,7 +2518,7 @@ QScrollBar:horizontal {
                              <rect>
                               <x>0</x>
                               <y>0</y>
-                              <width>218</width>
+                              <width>274</width>
                               <height>218</height>
                              </rect>
                             </property>
