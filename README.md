@@ -1,5 +1,5 @@
-# PyVA
-Python Virtual Assistant
+# MeeruVA
+Meeru Virtual Assistant
 
 ## Installation
 1. Install libraries
@@ -11,15 +11,6 @@ Python Virtual Assistant
    `python main.py`
 
 ## Feature
-1. Get information about whatever you want to know about.
-  
-2. Do maths!
-  
-3. Play video from Youtube.
-   
-4. Translate.
- 
-5. Return answer with both texts and sounds.
 
 ## FAQ
 
